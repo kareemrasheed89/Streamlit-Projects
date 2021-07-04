@@ -1,2 +1,2 @@
 streamlit
-time
+python-time ==0.3.0
