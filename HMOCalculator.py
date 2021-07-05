@@ -17,6 +17,12 @@ st.info("Hi, Good Day, Welcome to Wellness HMO, I am your health insurance frien
 st.header("Demographics:")
 Name=st.text_input("Enter your FullName",type="default")
 Phone_Number=st.text_input("Enter Your PhoneNumber",type="default")
+if Phone_Number==str():
+    if len(Phone_Number)<11:
+        if Phone_Number=="":
+            st.spinner("input correct PhoneNumber like +23481778329565")
+        else:
+            st.spinner("you can move to next question")
 Home_Address=st.text_input("Enter Your Home Address",type="default")
 Email_Address=st.text_input("Enter Your Email Address",type="default")
 Age_range=st.selectbox("Select Your Age Range:",['Below 10years','10yrs-<18yrs','18yrs-<30yrs','30yrs-<45yrs','45yrs & Above'])
