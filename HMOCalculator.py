@@ -199,7 +199,7 @@ else:
 
 
 #Design Calculator button
-if st.button("Calculate My health Cost and Plan:"):
+if st.button("Calculate My HMO Plan Payment"):
     result=Age_Point+Sex_Point+Life_style_Point+Life_Style_freq_Point+Existing_illness_Point+Marital_status_Point+Choice_of_hosp_Point+last_menstral_Point+Ambulance_service_Point+Type_of_Care_Point+Specialist_Consult_Point+Diagnostics_Point+immunization_Point+Mertanity_care_Point+Delivery_service_Point
     result=result*1000
     with st.spinner("Your Payment Loading..."):
